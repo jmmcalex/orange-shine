@@ -1,0 +1,12 @@
+.results-section {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  .result-display {
+    max-width: 50%;
+    flex-grow: 1;
+    overflow: auto;
+    margin: 10px
+  }
+}

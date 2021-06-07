@@ -1,0 +1,18 @@
+{
+  "name": "orange-shine",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx nf start",
+    "install_subfolders": "cd server && npm install && cd ../frontend && npm install && cd .."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "foreman": "^3.0.1",
+    "nodemon": "^2.0.7"
+  }
+}
