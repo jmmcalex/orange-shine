@@ -14,9 +14,9 @@ npm run start
 # Considerations and Motivations
 
 ### Process
-I was only able to work on it for two days given some other obilgations, but I managed basic functionality. 
+I was only able to work on it for two days given some personal obilgations, but finished basic functionality
 
-I decided to build a basic backend with the 'controller repository service' pattern. I used 'typeorm' to manage the database, sqlite due to it's easy setup and installation with node, and express to handle requests. 
+I wanted to create the entire application using JavaScript given that i'ts the language that I'm most comfortable with. With that in mind, I used Typeorm to manage the database since its annotation features were similar enough to Spring Boot and made the learning curve easier. I chose SQLite as a database due to it's quick setup and installation with node. I used Express to handle requests given its simplicity, wide use, and seamless integration with Node.
 
 For the UI, I considered setting up a cli program but figured it would be faster for me to stick to what I'm comfortable with and whip up a minimal react app.
 
