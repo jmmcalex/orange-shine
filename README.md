@@ -1,6 +1,6 @@
 # orange-shine
 
-A simple web application to perform a search on a sqlite database seeded by json files
+A simple web application to perform a search on a SQLite database seeded by JSON files
 
 # Installation and Run
 To run this install the latest version of node.
