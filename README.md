@@ -16,13 +16,13 @@ npm run start
 ### Process
 I was only able to work on it for two days given some other obilgations, but I managed basic functionality. 
 
-I decided to build a basic backend with the controller repository service pattern. I used 'typeorm' to manage the database, sqlite due to it's easy setup and installation with node, and express to handle requests. 
+I decided to build a basic backend with the 'controller repository service' pattern. I used 'typeorm' to manage the database, sqlite due to it's easy setup and installation with node, and express to handle requests. 
 
 For the UI, I considered setting up a cli program but figured it would be faster for me to stick to what I'm comfortable with and whip up a minimal react app.
 
 ### Next Steps
-- I saw possible relations in the data between tickets and users with submitter_id, asignee_id, requester_id. Establish those relations and pull related data when making queries.
-- Currently the backend returns a single entity per request for ease of handling on the frontend. Backend should return list of all matching entities and frontend should handle it accordingly. e.g. ticket.type === 'question' should pull up its an entire list of results.
+- I saw possible relations in the data between tickets and users with submitter_id, asignee_id, requester_id. I would establish those relations and pull related data when making queries.
+- Currently the backend returns a single entity per request for ease of handling on the frontend. I would return a list of all matching entities and frontend should handle it accordingly. e.g. ticket.type === 'question' should pull up its an entire list of results.
 
 ### Data Management
 At first glance I thought this would be simple enough to run through each database file, normalize all the data into structured objects, something like this:
