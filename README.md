@@ -26,6 +26,8 @@ For the UI, I considered setting up a cli program but figured it would be faster
 
 ### Data Management
 At first glance I thought this would be simple enough to run through each database file, normalize all the data into structured objects (see below), I decided  I would be better served to just throw together a quck sqlite database. 
+
+#### Example of normalized data
 ```
 users: {
   _id: {
