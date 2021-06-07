@@ -2,6 +2,15 @@
 
 A simple web application to perform a search on a sqlite database seeded by json files
 
+# Installation and Run
+To run this install the latest version of node.
+Then in the root folder of the project run
+```
+npm install
+npm run install_subfolders
+npm run start
+```
+
 # Considerations and Motivations
 At first glance I thought this would be simple enough to run through each database file, normalize all the data into structured objects, something like this:
 ```
@@ -29,11 +38,4 @@ Node/Express \
 Sqlite \
 React
 
-# Installation
-To run this install the latest version of node.
-Then in the root folder of the project run
-```
-npm install
-npm run install_subfolders
-npm run start
-```
+
