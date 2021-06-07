@@ -46,7 +46,7 @@ users: {
 
 # Stack
 Node/Express \
-Sqlite \
+SQLite \
 React
 
 
