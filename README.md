@@ -13,8 +13,16 @@ npm run start
 
 # Considerations and Motivations
 
-## Tradeoffs
-I was only able to work on it for two days given some other obilgations, but It's functional enough. The searches only pull the first matching result regardless of the search term or type of object being searched. A search on 'type' === question should pull up a whole list of tickets, but I was pretty time constrained so I went for a simple approach. 
+### Process
+I was only able to work on it for two days given some other obilgations, but I managed basic functionality. 
+
+I decided to build a basic backend with the controller repository service pattern. I used 'typeorm' to manage the database, sqlite due to it's easy setup and installation with node, and express to handle requests. 
+
+For the UI, I considered setting up a cli program but figured it would be faster for me to stick to what I'm comfortable with and whip up a minimal react app.
+
+### Next Steps
+- I saw possible relations in the data between tickets and users with submitter_id, asignee_id, requester_id. Establish those relations and pull related data when making queries.
+- Currently the backend returns a single entity per request for ease of handling on the frontend. Backend should return list of all matching entities and frontend should handle it accordingly. e.g. ticket.type === 'question' should pull up its an entire list of results.
 
 ## Data Management
 At first glance I thought this would be simple enough to run through each database file, normalize all the data into structured objects, something like this:
@@ -32,7 +40,7 @@ users: {
  }
  ```
 But I figured I would be better served to just throw together a quck sqlite database. 
-As far as the UI, I actually don't know how to set up a cli program and figured it would be faster for me to just whip up a minimal react app.
+
 
 # Stack
 Node/Express \
