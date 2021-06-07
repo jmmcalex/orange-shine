@@ -24,7 +24,7 @@ For the UI, I considered setting up a cli program but figured it would be faster
 - I saw possible relations in the data between tickets and users with submitter_id, asignee_id, requester_id. Establish those relations and pull related data when making queries.
 - Currently the backend returns a single entity per request for ease of handling on the frontend. Backend should return list of all matching entities and frontend should handle it accordingly. e.g. ticket.type === 'question' should pull up its an entire list of results.
 
-## Data Management
+### Data Management
 At first glance I thought this would be simple enough to run through each database file, normalize all the data into structured objects, something like this:
 ```
 users: {
